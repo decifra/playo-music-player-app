@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
               height: screenHeight * 0.9,
               width: double.infinity,
               color: kThemeDark,
-              child: HomeScreenContent(),
+              child: const HomeScreenContent(),
             ),
           ),
           const SizedBox(
