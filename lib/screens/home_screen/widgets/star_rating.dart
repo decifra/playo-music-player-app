@@ -4,9 +4,11 @@ import '../../../constant.dart';
 
 class StarRatting extends StatelessWidget {
   const StarRatting({
+    required this.rating,
     Key? key,
   }) : super(key: key);
 
+  final int rating;
   @override
   Widget build(BuildContext context) {
     return Positioned(
@@ -20,14 +22,14 @@ class StarRatting extends StatelessWidget {
         ),
         child: Stack(
           clipBehavior: Clip.none,
-          children: const <Widget>[
+          children: <Widget>[
             Positioned(
               top: 5,
               left: 0,
               right: 0,
               child: Icon(
                 Icons.star,
-                color: kLightPink,
+                color: rating >= 3 ? kLightPink : kThemeLightDark,
                 size: 20,
               ),
             ),
@@ -36,7 +38,7 @@ class StarRatting extends StatelessWidget {
               left: 55,
               child: Icon(
                 Icons.star,
-                color: kLightPink,
+                color: rating >= 2 ? kLightPink : kThemeLightDark,
                 size: 20,
               ),
             ),
@@ -45,7 +47,7 @@ class StarRatting extends StatelessWidget {
               right: 55,
               child: Icon(
                 Icons.star,
-                color: kLightPink,
+                color: rating >= 4 ? kLightPink : kThemeLightDark,
                 size: 20,
               ),
             ),
@@ -54,7 +56,7 @@ class StarRatting extends StatelessWidget {
               left: 35,
               child: Icon(
                 Icons.star,
-                color: kLightPink,
+                color: rating >= 1 ? kLightPink : kThemeLightDark,
                 size: 20,
               ),
             ),
@@ -63,7 +65,7 @@ class StarRatting extends StatelessWidget {
               right: 35,
               child: Icon(
                 Icons.star,
-                color: kThemeLightDark,
+                color: rating >= 5 ? kLightPink : kThemeLightDark,
                 size: 20,
               ),
             ),

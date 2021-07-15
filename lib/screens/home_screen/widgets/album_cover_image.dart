@@ -4,10 +4,12 @@ import 'package:playo_music/screens/home_screen/widgets/star_rating.dart';
 class AlbumCoverImage extends StatelessWidget {
   const AlbumCoverImage({
     required this.url,
+    required this.rating,
     Key? key,
   }) : super(key: key);
 
   final String url;
+  final int rating;
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +24,9 @@ class AlbumCoverImage extends StatelessWidget {
               image: DecorationImage(image: AssetImage(url), fit: BoxFit.cover),
             ),
           ),
-          const StarRatting()
+          StarRatting(
+            rating: rating,
+          )
         ],
       ),
     );

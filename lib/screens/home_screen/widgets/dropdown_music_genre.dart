@@ -19,7 +19,6 @@ class DropdownMusicGenres extends StatelessWidget {
           color: Colors.white,
         ),
       ),
-      elevation: 16,
       style: const TextStyle(color: Colors.deepPurple),
       underline: Container(
         height: 0,
@@ -28,6 +27,7 @@ class DropdownMusicGenres extends StatelessWidget {
       onChanged: (String? newValue) {
         debugPrint(newValue);
       },
+      dropdownColor: Colors.grey,
       items:
           <String>['5Star music'].map<DropdownMenuItem<String>>((String value) {
         return DropdownMenuItem<String>(
