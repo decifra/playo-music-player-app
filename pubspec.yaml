@@ -1,0 +1,44 @@
+name: playo_music
+description: Playo Music (Design by Hesam Mousavi)
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  carousel_slider: ^4.0.0
+  cupertino_icons: ^1.0.2
+  flutter:
+    sdk: flutter
+  
+  flutter_custom_clippers: ^2.0.0
+  flutter_svg: ^0.22.0
+  google_fonts: ^2.1.0
+
+  lint: ^1.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/images/
+
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+
