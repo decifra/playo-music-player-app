@@ -9,6 +9,6 @@ class Album {
 
 List<Album> albums = <Album>[
   Album('Love goes', 'Sam Smith', 'assets/images/sam_smith.jpeg', 4),
-  Album('Dark paradise', 'Lana del ray', 'assets/images/lana_del_ray.png', 5),
+  Album('Dark paradise', 'Lana del rey', 'assets/images/lana_del_rey.png', 5),
   Album('Biblical', 'Calum Scott', 'assets/images/calum_scott.jpeg', 3),
 ];
